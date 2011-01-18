@@ -3,5 +3,6 @@ bin/
 doc/
 tmp/
 build/
+admin/*.log
 ExperimentalEngine.cbp
 ExperimentalEngine.layout
