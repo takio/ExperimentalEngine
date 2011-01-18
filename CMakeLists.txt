@@ -6,7 +6,7 @@ cmake_minimum_required(VERSION 2.6)
 
 # Appends the cmake/modules path inside the MAKE_MODULE_PATH variable which stores the
 # directories of additional CMake modules (eg MacroOutOfSourceBuild.cmake):
-set(CMAKE_MODULE_PATH ${xengine_SOURCE_DIR}/cmake/modules ${CMAKE_MODULE_PATH})
+set(CMAKE_MODULE_PATH ${xengine_SOURCE_DIR}/admin/cmake/modules ${CMAKE_MODULE_PATH})
 
 # The macro below forces the build directory to be different from source directory
 include(MacroOutOfSourceBuild)
