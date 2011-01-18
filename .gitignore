@@ -3,7 +3,8 @@ bin/
 doc/
 tmp/
 build/
-admin/*.log
+admin/Doxygen.err.log
+admin/Doxygen.out.log
 ExperimentalEngine.cbp
 ExperimentalEngine.layout
 ExperimentalEngine.depend
