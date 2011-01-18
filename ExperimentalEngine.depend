@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1295388522 source:/home/jan/Projekte/6.ExperimentalEngine/ExperimentalEngine/src/helloworld.cpp
+	<iostream>
+	"helloworld.h"
+
+1295388809 /home/jan/Projekte/6.ExperimentalEngine/ExperimentalEngine/src/helloworld.h
+
+1295388522 source:/home/jan/Projekte/6.ExperimentalEngine/ExperimentalEngine/src/main.cpp
+	"helloworld.h"
+
