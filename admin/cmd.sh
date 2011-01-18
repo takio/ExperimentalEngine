@@ -30,4 +30,20 @@ case $1 in
   "check" )
     cppcheck --enable=all --verbose $srcs
   ;;
+  "build" )
+    if [ -d build ];
+    then
+      rm -rf build/
+    fi
+    mkdir -p build
+    cd build
+    cmake ..
+    make
+  ;;
+  "execute"  | "exec" )
+    if [ -d build ];
+    then
+      build/src/xengine
+    fi
+  ;;
 esac
