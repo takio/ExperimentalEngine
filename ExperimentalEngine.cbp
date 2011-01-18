@@ -31,13 +31,23 @@
 		<Compiler>
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
+			<Add directory="src" />
 		</Compiler>
-		<Unit filename="main.cpp" />
+		<Unit filename="src/helloworld.cpp" />
+		<Unit filename="src/helloworld.h" />
+		<Unit filename="src/main.cpp" />
+		<Unit filename="src/version.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
 			<debugger />
 			<lib_finder disable_auto="1" />
+			<AutoVersioning>
+				<Scheme minor_max="100" build_max="0" rev_max="0" rev_rand_max="10" build_times_to_increment_minor="200" />
+				<Settings autoincrement="1" date_declarations="1" do_auto_increment="1" ask_to_increment="0" language="C++" svn="0" svn_directory="" header_path="src/version.h" />
+				<Changes_Log show_changes_editor="0" app_title="released version %M.%m.%b of %p" changeslog_path="ChangesLog.txt" />
+				<Code header_guard="XE_VERSION_H" namespace="AutoVersion" prefix="" />
+			</AutoVersioning>
 		</Extensions>
 	</Project>
 </CodeBlocks_project_file>
