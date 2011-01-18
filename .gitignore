@@ -1,0 +1,7 @@
+obj/
+bin/
+doc/
+tmp/
+build/
+ExperimentalEngine.cbp
+ExperimentalEngine.layout
