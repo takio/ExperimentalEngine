@@ -5,7 +5,7 @@ srcs=$srcdir*.cpp
 
 case $1 in
   "style" )
-    astyle --style=allman --suffix="" --formatted --mode=java --indent=spaces=2 $srcs 2> admin/astyle.err.log > admin/astyle.out.log
+    astyle --style=allman --suffix="" --formatted --mode=java --indent=spaces=2 $srcs
     if [ -e $srcdir/*.orig ]; then
       mkdir -p $srcdir/.backup
       mv $srcdir/*.orig $srcdir/.backup/
@@ -28,7 +28,7 @@ case $1 in
     rm -rf doc/ obj/ bin/ admin/*.log build/
   ;;
   "check" )
-    cppcheck --enable=all --verbose $srcs --xml 2> admin/cppcheck.err.xml.log > admin/cppcheck.out.xml.log
+    cppcheck --enable=all --verbose $srcs
   ;;
   "build" )
     if [ -d build ];
